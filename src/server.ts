@@ -1,10 +1,17 @@
 import fastify from 'fastify';
+import { prisma } from './lib/prisma'
 
 const app = fastify();
 const PORT = Number(process.env.PORT || 3000);
 
 app.get('/', async (request, reply) => {
   return { message: 'Hello, Heroku with Fastify!' };
+});
+
+app.get('/prompts', async (request, reply) => {
+  const prompts = await prisma.prompt.findMany()
+
+  return prompts
 });
 
 export function startServer(port = PORT) {
