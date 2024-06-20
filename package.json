@@ -5,7 +5,7 @@
   "main": "dist/main.js",
   "scripts": {
     "build": "tsc",
-    "dev": "tsx watch src/main.js",
+    "dev": "tsx watch src/main.ts",
     "start": "node dist/main.js",
     "heroku-postbuild": "pnpm run build"
   },
@@ -19,5 +19,10 @@
   },
   "dependencies": {
     "fastify": "^4.28.0"
-  }
+  },
+  "engines": {
+    "node": ">=20.x",
+    "npm": ">=10.x"
+  },
+  "packageManager": "pnpm@9.0.5"
 }
