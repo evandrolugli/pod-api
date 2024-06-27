@@ -9,9 +9,12 @@ app.get('/', async (request, reply) => {
 });
 
 app.get('/prompts', async (request, reply) => {
-  const prompts = await prisma.prompt.findMany()
+  
+  return { message: 'Hello Prompts!' };
+  
+  //const prompts = await prisma.prompt.findMany()
 
-  return prompts
+  //return prompts
 });
 
 export function startServer(port = PORT) {
