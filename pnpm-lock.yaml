@@ -14,6 +14,9 @@ dependencies:
   fastify:
     specifier: ^4.28.0
     version: 4.28.0
+  typescript:
+    specifier: ^5.4.5
+    version: 5.4.5
 
 devDependencies:
   '@types/node':
@@ -25,9 +28,6 @@ devDependencies:
   tsx:
     specifier: ^4.15.6
     version: 4.15.6
-  typescript:
-    specifier: ^5.4.5
-    version: 5.4.5
 
 packages:
 
@@ -739,7 +739,7 @@ packages:
     resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
+    dev: false
 
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}

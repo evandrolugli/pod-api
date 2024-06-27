@@ -7,7 +7,7 @@
     "build": "tsc",
     "dev": "tsx watch src/main.ts",
     "start": "node dist/main.js",
-    "heroku-postbuild": "pnpm run build"
+    "heroku-postbuild": "pnpm prisma generate && pnpm run build"
   },
   "keywords": [],
   "author": "",
@@ -21,11 +21,13 @@
   "dependencies": {
     "@fastify/cors": "^9.0.1",
     "@prisma/client": "5.15.1",
-    "fastify": "^4.28.0"
+    "fastify": "^4.28.0",
+    "typescript": "^5.4.5"
   },
   "engines": {
     "node": ">=20.x",
-    "npm": ">=10.x"
+    "npm": ">=10.x",
+    "pnpm": "8.x"
   },
   "packageManager": "pnpm@9.0.5"
 }
