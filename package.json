@@ -2,11 +2,11 @@
   "name": "pod-api",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/main.js",
+  "main": "build/main.js",
   "scripts": {
     "build": "tsc",
     "dev": "tsx watch src/main.ts",
-    "start": "node dist/main.js",
+    "start": "node build/main.js",
     "heroku-postbuild": "pnpm prisma generate && pnpm run build"
   },
   "keywords": [],
@@ -14,15 +14,15 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.14.6",
-    "prisma": "^5.15.1",
+    "prisma": "^4.0.0",
     "tsx": "^4.15.6",
-    "typescript": "^5.4.5"
+    "typescript": "^5.0.0"
   },
   "dependencies": {
     "@fastify/cors": "^9.0.1",
-    "@prisma/client": "5.15.1",
-    "fastify": "^4.28.0",
-    "typescript": "^5.4.5"
+    "@prisma/client": "^4.0.0",
+    "fastify": "^4.0.0",
+    "typescript": "^5.0.0"
   },
   "engines": {
     "node": ">=20.x",
