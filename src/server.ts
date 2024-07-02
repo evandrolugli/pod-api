@@ -1,13 +1,13 @@
 import fastify from 'fastify';
-import fastifyCors from '@fastify/cors';
-import { prisma } from './lib/prisma'
+//import fastifyCors from '@fastify/cors';
+//import { prisma } from './lib/prisma'
 
 const app = fastify();
 const PORT = Number(process.env.PORT || 3000);
 
-app.register(fastifyCors, {
-  origin: '*', // Modify according to your needs
-});
+// app.register(fastifyCors, {
+//   origin: '*', // Modify according to your needs
+// });
 
 app.get('/', async (request, reply) => {
   return { message: 'Hello, Heroku with Fastify!' };
