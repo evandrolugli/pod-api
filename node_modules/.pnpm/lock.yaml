@@ -14,6 +14,9 @@ dependencies:
   fastify:
     specifier: ^4.0.0
     version: 4.28.0
+  prisma:
+    specifier: ^4.0.0
+    version: 4.16.2
   typescript:
     specifier: ^5.0.0
     version: 5.4.5
@@ -22,9 +25,6 @@ devDependencies:
   '@types/node':
     specifier: ^20.14.6
     version: 20.14.6
-  prisma:
-    specifier: ^4.0.0
-    version: 4.16.2
   tsx:
     specifier: ^4.15.6
     version: 4.15.6
@@ -290,6 +290,7 @@ packages:
   /@prisma/engines@4.16.2:
     resolution: {integrity: sha512-vx1nxVvN4QeT/cepQce68deh/Turxy5Mr+4L4zClFuK1GlxN3+ivxfuv+ej/gvidWn1cE1uAhW7ALLNlYbRUAw==}
     requiresBuild: true
+    dev: false
 
   /@types/node@20.14.6:
     resolution: {integrity: sha512-JbA0XIJPL1IiNnU7PFxDXyfAwcwVVrOoqyzzyQTyMeVhBzkJVMSkC1LlVsRQ2lpqiY4n6Bb9oCS6lzDKVQxbZw==}
@@ -583,6 +584,7 @@ packages:
     requiresBuild: true
     dependencies:
       '@prisma/engines': 4.16.2
+    dev: false
 
   /process-warning@3.0.0:
     resolution: {integrity: sha512-mqn0kFRl0EoqhnL0GQ0veqFHyIN1yig9RHh/InzORTUiZHFRAur+aMtRkELNwGs9aNwKS6tg/An4NYBPGwvtzQ==}
